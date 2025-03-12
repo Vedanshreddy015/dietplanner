@@ -29,8 +29,17 @@
             <label for="confirm-password">Confirm Password</label>
             <input type="password" id="confirm-password" name="confirm-password" required>
 
-            <button type="submit"><a href="login.html">Sign Up</button></a>
+             <button type="submit"><a href="login.html">Sign Up</button></a>
         </form>
     </div>
+    <script>
+        document.getElementById("signinForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            document.getElementById("successMessage").style.display = "block";
+            setTimeout(() => {
+                window.location.href = "login.html"; // Redirect to login page
+            }, 2000);
+        });
+    </script>
 </body>
 </html>
