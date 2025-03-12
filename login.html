@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        /* CSS for styling the Sign In link */
+        .signin-link {
+            display: inline-block;
+            padding: 10px 100px;
+            text-decoration: none;
+            color: white;
+            background-color: #4CAF50;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .signin-link:hover {
+            background-color: #45a049;
+        }
+        /* CSS for aligning h1 tag at the top and changing its color to white */
+        h1 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            /*background-color: black; /* Just for visibility, you can remove or change this */
+            text-align: center; /* Center-aligns the text horizontally */
+            padding: 10px 0; /* Adds some padding for better appearance */
+        }
+    </style>
+    <h1>NUTRI PLAN</h1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <body style="background-image: url('back.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh;">
+    <div class="login-container">
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button><br>
+            <a href="https://www.example.com/signin" class="signin-link">Sign In</a>
+        </form>
+        
+    </div>
+</body>
+</html>
