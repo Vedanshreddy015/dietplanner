@@ -4,7 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="signin.css">
+    <!--<link rel="stylesheet" href="signin.css">-->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .message {
+            color: green;
+            display: none;
+            margin-bottom: 10px;
+        }
+        input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+    </style>
 </head>
 <body>
     <body style="background-image: url('back.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh;">
@@ -32,14 +73,5 @@
              <button type="submit"><a href="login.html">Sign Up</button></a>
         </form>
     </div>
-    <!--<script>
-        document.getElementById("signinForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            document.getElementById("successMessage").style.display = "block";
-            setTimeout(() => {
-                window.location.href = "login.html"; // Redirect to login page
-            }, 2000);
-        });
-    </script>-->
 </body>
 </html>
