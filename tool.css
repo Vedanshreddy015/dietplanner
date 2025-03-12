@@ -2,6 +2,7 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    padding-top: 50px; /* To prevent content from being hidden under the fixed toolbar */
 }
 
 .toolbar {
@@ -11,6 +12,11 @@ body {
     background-color: #333;
     padding: 10px 20px;
     color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo {
