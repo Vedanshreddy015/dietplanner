@@ -1,35 +1,53 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diet Planner</title>
+    <title>Diet Plan Home</title>
     <link rel="stylesheet" href="home.css">
 </head>
 <body>
-    <body style="background-image: url('back.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; height: 100vh;">
-    <div class="container">
-        <header>Diet Planner</header>
-        <div class="search-bar">
-            <input type="text" placeholder="Search for foods...">
-        </div>
-        <div class="liked-foods">
-            <h2>Liked Foods</h2>
-            <ul>
-                <li>Avocado</li>
-                <li>Chicken Breast</li>
-                <li>Greek Yogurt</li>
-            </ul>
-        </div>
-        <div class="your-diet">
-            <h2>Your Diet</h2>
-            <p>Breakfast: Oatmeal & Fruits</p>
-            <p>Lunch: Grilled Chicken Salad</p>
-            <p>Dinner: Steamed Vegetables & Fish</p>
-        </div>
-    </div>
+    <div id="toolbar-placeholder"></div>
+
+    <script>
+        fetch("tool.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("toolbar-placeholder").innerHTML = data;
+            });
+    </script>
+
+    <header>
+        <h1>My Diet Plan</h1>
+        <nav>
+            <a href="favourite-foods.html">Favourite Foods</a>
+        </nav>
+    </header>
+
+    <section class="diet-plan">
+        <h2>Selected Diet Plan</h2>
+        <p><strong>Plan Name:</strong> Balanced Diet</p>
+        <p><strong>Daily Calories:</strong> 2000 kcal</p>
+        <p><strong>Description:</strong> A well-balanced diet that includes all essential nutrients.</p>
+    </section>
+
+    <section class="favourite-foods">
+        <h2>Favourite Foods</h2>
+        <ul>
+            <li>Grilled Chicken</li>
+            <li>Avocado Salad</li>
+            <li>Oatmeal with Fruits</li>
+            <li>Green Smoothie</li>
+        </ul>
+        <a href="favoutite.html" class="btn">View All Favourite Foods</a>
+    </section>
+
+    <section class="other-details">
+        <h2>Other Details</h2>
+        <p><strong>Water Intake:</strong> 3 Liters per day</p>
+        <p><strong>Exercise Routine:</strong> 30 minutes of cardio & strength training</p>
+        <p><strong>Meal Timings:</strong> 8 AM, 12 PM, 6 PM</p>
+    </section>
+
 </body>
 </html>
-
-/

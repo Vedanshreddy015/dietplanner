@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diet Plan Form</title>
+    <link rel="stylesheet" href="detail.css">
+</head>
+<body>
+
+    <header>
+        <h1>Diet Plan Registration</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="fav-foods">Favourite Foods (comma-separated):</label>
+            <input type="text" id="fav-foods" name="fav-foods" required>
+
+            <label for="health-issues">Any Health Issues?</label>
+            <textarea id="health-issues" name="health-issues" rows="4"></textarea>
+
+            <label for="diet-goal">Diet Goal:</label>
+            <select id="diet-goal" name="diet-goal">
+                <option value="weight-loss">Weight Loss</option>
+                <option value="muscle-gain">Muscle Gain</option>
+                <option value="healthy-eating">Healthy Eating</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="meal-preference">Meal Preference:</label>
+            <select id="meal-preference" name="meal-preference">
+                <option value="vegetarian">Vegetarian</option>
+                <option value="non-vegetarian">Non-Vegetarian</option>
+                <option value="vegan">Vegan</option>
+                <option value="pescatarian">Pescatarian</option>
+            </select>
+
+            <label for="activity-level">Activity Level:</label>
+            <select id="activity-level" name="activity-level">
+                <option value="sedentary">Sedentary (little to no exercise)</option>
+                <option value="lightly-active">Lightly Active (1-2 times/week)</option>
+                <option value="moderately-active">Moderately Active (3-5 times/week)</option>
+                <option value="very-active">Very Active (daily exercise)</option>
+            </select>
+
+            <label for="additional-info">Additional Information:</label>
+            <textarea id="additional-info" name="additional-info" rows="4"></textarea>
+
+            <button type="submit"><a href="plan.html">Submit</a></button>
+        </form>
+    </main>
+
+</body>
+</html>
+

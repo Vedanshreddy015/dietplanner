@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Favourite Foods</title>
+  <link rel="stylesheet" href="favourite.css">
+</head>
+<body>
+    <div id="toolbar-placeholder"></div>
+
+<script>
+    fetch("tool.html")
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById("toolbar-placeholder").innerHTML = data;
+        });
+</script>
+  <header>
+    <h1>Favourite Foods</h1>
+  </header>
+  <main>
+    <ul class="food-list">
+      <li>Grilled Chicken</li>
+      <li>Avocado Salad</li>
+      <li>Oatmeal with Fruits</li>
+      <li>Green Smoothie</li>
+      <li>Fruit Salad</li>
+      <li>Quinoa Bowl</li>
+      <li>Greek Yogurt with Honey</li>
+      <li>Steamed Vegetables</li>
+      <li>Whole Grain Toast</li>
+      <li>Scrambled Eggs</li>
+      <li>Banana Pancakes</li>
+      <li>Berry Smoothie</li>
+      <li>Mixed Nuts</li>
+      <li>Lentil Soup</li>
+      <li>Turkey Sandwich</li>
+      <li>Brown Rice</li>
+      <li>Spinach Salad</li>
+      <li>Protein Shake</li>
+      <li>Veggie Wrap</li>
+      <li>Fresh Juice</li>
+      <li>Baked Salmon</li>
+      <li>Tofu Stir Fry</li>
+      <li>Cauliflower Rice</li>
+      <li>Beetroot Salad</li>
+      <li>Chia Pudding</li>
+    </ul>
+  </main>
+</body>
+</html>
